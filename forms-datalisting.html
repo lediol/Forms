@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+<label for="shteti">Shteti :</label><br>
+<input list="shteti" name="shteti" placeholder="Qyteti">
+<datalist name="shteti" id="shteti">
+    <option value="355"></option>
+    <option value="383"></option>
+  <option value="434"></option>
+    
+</datalist>
+    </form>
+    <form>
+        <label for="progress">Progress:</label>
+        <progress min="0" max="100" value="20" id="progress">20</progress>
+
+    </form>
+    <form oninput="val.value=parseInt(price.value)">
+        <input type="range" name="price" id="price" min="0" max="100" value="60">
+        <output name="val" for="price">60</output>
+    </form>
+</body>
+</html>
